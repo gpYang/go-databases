@@ -22,10 +22,10 @@ CREATE TABLE `class` (
 ``` go
 import "github.com/gpYang/go-databases/mysql"
 func main() {
-   php.LogSQL(func(q string) {
+    mysql.LogSQL(func(q string) {
 		fmt.Println(q)
 	})
-	h, _ := php.Instance("root:root@tcp(10.10.19.117:3306)/f_center?parseTime=true")
+	h, _ := mysql.Instance("root:root@tcp(10.10.19.117:3306)/f_center?parseTime=true")
 	// nested transaction 1
 	h.Begin()
 	// h.From("class").
