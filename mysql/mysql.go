@@ -1,4 +1,4 @@
-package php
+package mysql
 
 import (
 	"database/sql"
@@ -7,6 +7,9 @@ import (
 	"regexp"
 	"strings"
 	"time"
+
+	// mysql driver
+	_ "github.com/go-sql-driver/mysql"
 )
 
 type transationStatus int
